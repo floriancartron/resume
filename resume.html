@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Florian CARTRON — DevOps Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#2563eb',
+            brandLight: '#eff6ff',
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    @media print {
+      body { font-size: 11px; }
+      .no-print { display: none; }
+      .page-break { page-break-before: always; }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800 min-h-screen py-8 px-4">
+
+  <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden">
+
+    <!-- HEADER -->
+    <div class="bg-gradient-to-r from-blue-700 to-blue-500 px-10 py-8 text-white">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div class="flex items-center gap-6">
+          <img src="pp.jpg" alt="Florian CARTRON" class="w-24 h-24 rounded-full object-cover border-4 border-white/30 shadow-lg flex-shrink-0" />
+          <div>
+            <h1 class="text-4xl font-extrabold tracking-tight">
+              Florian <span class="text-blue-200">CARTRON</span>
+            </h1>
+            <p class="text-blue-100 text-lg font-medium mt-1">DevOps / Platform Engineer</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-1 text-sm text-blue-100">
+          <a href="mailto:florian.cartron@gmail.com" class="flex items-center gap-2 hover:text-white transition">
+            <span>✉</span> florian.cartron@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/florian-cartron/" target="_blank" class="flex items-center gap-2 hover:text-white transition">
+            <span>🔗</span> linkedin.com/in/florian-cartron
+          </a>
+          <a href="https://github.com/floriancartron" target="_blank" class="flex items-center gap-2 hover:text-white transition">
+            <span>🐙</span> github.com/floriancartron
+          </a>
+          <a href="https://dev.to/florian_cartron_99c9a9c4a" target="_blank" class="flex items-center gap-2 hover:text-white transition">
+            <span>✍</span> dev.to articles
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="px-10 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- LEFT COLUMN -->
+      <div class="md:col-span-1 flex flex-col gap-8">
+
+        <!-- EXPERTISES -->
+        <section>
+          <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3 border-b border-blue-100 pb-1">Expertises</h2>
+          <div class="flex flex-col gap-2">
+
+            <!-- Helper: level bar -->
+            <!-- Expert = 5/5, Advanced = 4/5, Intermediate = 3/5 -->
+
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium w-32">Google Cloud</span>
+              <div class="flex gap-1">
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium w-32">Kubernetes</span>
+              <div class="flex gap-1">
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium w-32">Terraform</span>
+              <div class="flex gap-1">
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium w-32">Docker</span>
+              <div class="flex gap-1">
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-200"></span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium w-32">Ansible</span>
+              <div class="flex gap-1">
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-200"></span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium w-32">Python</span>
+              <div class="flex gap-1">
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-200"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-200"></span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium w-32">Go</span>
+              <div class="flex gap-1">
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-200"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-200"></span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium w-32">Gitlab</span>
+              <div class="flex gap-1">
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-200"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-200"></span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-medium w-32">GitHub</span>
+              <div class="flex gap-1">
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-200"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-200"></span>
+              </div>
+            </div>
+
+            <div class="flex gap-4 mt-1 text-xs text-gray-400">
+              <span>●●●●● Expert</span>
+              <span>●●●● Advanced</span>
+            </div>
+            <div class="text-xs text-gray-400">●●● Intermediate</div>
+          </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section>
+          <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3 border-b border-blue-100 pb-1">Certifications</h2>
+          <ul class="flex flex-col gap-2 text-sm">
+            <li>
+              <span class="font-semibold text-gray-700">Google Cloud</span>
+              <ul class="list-disc list-inside text-gray-600 ml-2 mt-0.5">
+                <li>Professional Cloud Architect</li>
+                <li>DevOps Engineer</li>
+                <li>Network Engineer</li>
+                <li>Authorized Trainer</li>
+              </ul>
+            </li>
+            <li><span class="font-semibold text-gray-700">Terraform</span> <span class="text-gray-600">Associate (003)</span></li>
+            <li>
+              <span class="font-semibold text-gray-700">Kubestronaut</span>
+              <span class="text-gray-600"> — 5x Kubernetes Certified</span>
+            </li>
+          </ul>
+          <a href="https://www.credly.com/users/florian-cartron.d52d6472/badges#credly"
+             target="_blank"
+             class="inline-flex items-center gap-1.5 mt-3 text-xs font-medium text-blue-600 hover:text-blue-800 transition">
+            🏅 View all badges on Credly →
+          </a>
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+          <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3 border-b border-blue-100 pb-1">Education</h2>
+          <p class="text-sm font-semibold text-gray-700">ENI</p>
+          <p class="text-sm text-gray-600 mt-0.5">Master en informatique — Management des systèmes d'information, option Infrastructures</p>
+          <p class="text-xs text-gray-400 mt-1">Master's Degree</p>
+        </section>
+
+        <!-- LANGUAGES -->
+        <section>
+          <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3 border-b border-blue-100 pb-1">Languages</h2>
+          <ul class="text-sm flex flex-col gap-1">
+            <li><span class="font-medium">French</span> <span class="text-gray-500">— Native</span></li>
+            <li><span class="font-medium">English</span> <span class="text-gray-500">— Professional</span></li>
+          </ul>
+        </section>
+
+        <!-- TRAINER -->
+        <section>
+          <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3 border-b border-blue-100 pb-1">Trainer</h2>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-blue-50 text-blue-700 text-xs font-medium px-2.5 py-1 rounded-full">Kubernetes</span>
+            <span class="bg-blue-50 text-blue-700 text-xs font-medium px-2.5 py-1 rounded-full">Google Cloud</span>
+            <span class="bg-blue-50 text-blue-700 text-xs font-medium px-2.5 py-1 rounded-full">Terraform</span>
+            <span class="bg-blue-50 text-blue-700 text-xs font-medium px-2.5 py-1 rounded-full">Docker</span>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- RIGHT COLUMN — EXPERIENCE -->
+      <div class="md:col-span-2 flex flex-col gap-8">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 border-b border-blue-100 pb-1">Work Experience</h2>
+
+        <!-- Prestashop -->
+        <div>
+          <div class="flex items-start justify-between gap-2 flex-wrap">
+            <div>
+              <h3 class="text-base font-bold text-gray-800">Prestashop</h3>
+              <p class="text-sm font-medium text-blue-600">DevOps / Platform Engineer</p>
+            </div>
+            <span class="text-xs text-gray-400 font-mono whitespace-nowrap mt-1">Sep 2025 – Present</span>
+          </div>
+          <p class="text-sm text-gray-600 mt-2">Ensuring reliability of the infrastructure and CI/CD pipelines (GitHub Actions).</p>
+
+          <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-3 mb-1">Kubernetes Platform & GitOps</p>
+          <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1">
+            <li>Designed and led the transition from Terraform-based application deployment to a streamlined GitOps solution with ArgoCD (ApplicationSets and App of Apps patterns), to ease deployment of existing and new projects through platform engineering.</li>
+            <li>Enforced best practices for image builds (12-factor app) to enable a promotion pattern for applications across environments.</li>
+            <li>Implemented Crossplane to provision Google Cloud resources (service accounts, Workload Identity, etc.) directly from Helm charts, removing the need to maintain Terraform configuration for these objects.</li>
+            <li>Deployed Renovate in self-hosted mode to enable frequent, small dependency updates; promoted this best practice within the infra team through a dedicated ritual and a promotion pipeline for infrastructure components, then extended it to dev teams for their application dependencies.</li>
+          </ul>
+
+          <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-3 mb-1">Observability</p>
+          <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1">
+            <li>Reworked Grafana dashboard deployment using ArgoCD, with templating and provisioning through ConfigMaps.</li>
+          </ul>
+
+          <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-3 mb-1">FinOps</p>
+          <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1">
+            <li>Implemented Custom Compute Classes to define Kubernetes node preferences and optimize compute costs.</li>
+            <li>Deployed Kube-Green to automatically stop non-critical workloads at night.</li>
+            <li>Rightsizing of Kubernetes workloads (requests/limits tuning).</li>
+            <li>Automated Cloud SQL instance shutdown during off-hours.</li>
+          </ul>
+
+          <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-3 mb-1">Migration</p>
+          <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1">
+            <li>In charge of migrating legacy workloads hosted on VMs to Google Cloud and Kubernetes.</li>
+          </ul>
+
+          <div class="mt-3 flex flex-wrap gap-1.5">
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Google Cloud</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Google Kubernetes Engine</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">GitHub Actions</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">ArgoCD</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Crossplane</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">OpenTelemetry</span>
+          </div>
+        </div>
+
+        <!-- Zenika -->
+        <div class="border-t border-gray-100 pt-6">
+          <div class="flex items-start justify-between gap-2 flex-wrap">
+            <div>
+              <h3 class="text-base font-bold text-gray-800">Zenika</h3>
+              <p class="text-sm font-medium text-blue-600">Cloud & DevOps Consultant / Trainer</p>
+            </div>
+            <span class="text-xs text-gray-400 font-mono whitespace-nowrap mt-1">Oct 2023 – Aug 2025</span>
+          </div>
+          <p class="text-sm text-gray-600 mt-2">SRE missions, migration projects to Google Cloud, FinOps topics, pre-sales activities, and target architecture design. Trainer and author/maintainer of Kubernetes training materials for Google Cloud topics.</p>
+
+          <!-- Koralplay -->
+          <div class="mt-4 pl-4 border-l-2 border-blue-200">
+            <div class="flex items-start justify-between gap-2 flex-wrap">
+              <p class="text-sm font-semibold text-gray-700">Koralplay <span class="font-normal text-gray-500">— DevOps Consultant</span></p>
+              <span class="text-xs text-gray-400 font-mono whitespace-nowrap">Jun 2025 – Aug 2025</span>
+            </div>
+            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-2 mb-1">Centralized Observability Platform (10 Kubernetes clusters)</p>
+            <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1">
+              <li>Design of the network architecture (incl. Private Service Connect for ingestion endpoints to handle overlapping IP plans) and infrastructure code to deploy the platform.</li>
+              <li>Full implementation of the observability stack via ArgoCD: Victoria Metrics, Victoria Logs, Tempo, OpenTelemetry Collector (tail sampling), Fluentd, Node Exporter, Grafana, Alertmanager.</li>
+              <li>Team training on the chosen stack.</li>
+              <li>Auto-instrumentation for Java applications via OpenTelemetry.</li>
+            </ul>
+            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-2 mb-1">Terraform Codebase Refactoring</p>
+            <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1">
+              <li>Full refactoring of the existing Terraform codebase and introduction of best practices.</li>
+              <li>Leveraged Atlantis to automate Terraform apply workflows via pull requests.</li>
+            </ul>
+          </div>
+
+          <!-- Nutravalia -->
+          <div class="mt-4 pl-4 border-l-2 border-blue-200">
+            <div class="flex items-start justify-between gap-2 flex-wrap">
+              <p class="text-sm font-semibold text-gray-700">Nutravalia <span class="font-normal text-gray-500">— Cloud Consultant</span></p>
+              <span class="text-xs text-gray-400 font-mono whitespace-nowrap">Nov 2024 – Jan 2025</span>
+            </div>
+            <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1 mt-1">
+              <li>Design of the target architecture: migration to Cloud Run, performance optimization with Cloud SQL and Redis, FinOps.</li>
+              <li>Support and training of teams (Google Cloud, Terraform, Docker).</li>
+              <li>Automation of the release and deployment process: CloudBuild, Semantic Release, Renovate.</li>
+              <li>Infrastructure code, deployment and migration.</li>
+            </ul>
+          </div>
+
+          <!-- Miasin -->
+          <div class="mt-4 pl-4 border-l-2 border-blue-200">
+            <div class="flex items-start justify-between gap-2 flex-wrap">
+              <p class="text-sm font-semibold text-gray-700">Miasin <span class="font-normal text-gray-500">— Cloud Consultant</span></p>
+              <span class="text-xs text-gray-400 font-mono whitespace-nowrap">Oct 2024 – Dec 2024</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">Migration from Ionos to Google Cloud of a social network application.</p>
+            <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1 mt-1">
+              <li>Target architecture design: from all-in-one server to distributed and scalable architecture (managed SQL, Redis, autoscaling, load balancing).</li>
+              <li>Infrastructure code, deployment (Terraform) and migration.</li>
+            </ul>
+          </div>
+
+          <!-- AODocs -->
+          <div class="mt-4 pl-4 border-l-2 border-blue-200">
+            <div class="flex items-start justify-between gap-2 flex-wrap">
+              <p class="text-sm font-semibold text-gray-700">AODocs <span class="font-normal text-gray-500">— Site Reliability Engineer</span></p>
+              <span class="text-xs text-gray-400 font-mono whitespace-nowrap">Oct 2023 – Sep 2024</span>
+            </div>
+            <p class="text-sm text-gray-600 mt-1">Worked within the SRE team in a rich Google Cloud environment. Participated in infrastructure migration with Atlantis (Terraform PR automation), brought CI/CD expertise on CloudBuild and designed a new CD solution with CloudDeploy. Automated tasks with Cloud Functions (Python, Go) for Slack and Jira integrations. Managed landing zones for developers (GCP Projects, GitHub Repositories) with Terraform. Contributed to a cloud-agnostic Kubernetes-based platform design.</p>
+            <div class="mt-2 flex flex-wrap gap-1.5">
+              <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Google Cloud</span>
+              <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Terraform</span>
+              <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Atlantis</span>
+              <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Python</span>
+              <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Go</span>
+              <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Kubernetes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Orange Business -->
+        <div class="border-t border-gray-100 pt-6">
+          <div class="flex items-start justify-between gap-2 flex-wrap">
+            <div>
+              <h3 class="text-base font-bold text-gray-800">Orange Business</h3>
+              <p class="text-sm font-medium text-blue-600">Cloud Engineer</p>
+            </div>
+            <span class="text-xs text-gray-400 font-mono whitespace-nowrap mt-1">2022 – 2023</span>
+          </div>
+          <p class="text-sm text-gray-600 mt-2">Multi-cloud managed services — built cloud environments for several clients within agile teams.</p>
+          <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1 mt-2">
+            <li>Infrastructure as Code: Landing Zone, Lift & shift, Replatforming, handover to offshore Run teams.</li>
+            <li>Design of the GCP monitoring solution (Cloud Monitoring architecture, alerting to internal tools, Terraform modules).</li>
+          </ul>
+          <div class="mt-3 flex flex-wrap gap-1.5">
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Google Cloud</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Flexible Engine</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Terraform</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Terraspace</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Ansible</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Gitlab</span>
+          </div>
+        </div>
+
+        <!-- Orange DevOps -->
+        <div class="border-t border-gray-100 pt-6">
+          <div class="flex items-start justify-between gap-2 flex-wrap">
+            <div>
+              <h3 class="text-base font-bold text-gray-800">Orange</h3>
+              <p class="text-sm font-medium text-blue-600">DevOps Engineer</p>
+            </div>
+            <span class="text-xs text-gray-400 font-mono whitespace-nowrap mt-1">2019 – 2022</span>
+          </div>
+          <p class="text-sm text-gray-600 mt-2">Contributor within an Agile Release Train — system team focused on streamlining deployments and micro-services transformation with Kubernetes.</p>
+          <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1 mt-2">
+            <li>Definition of the DevOps tooling architecture, infrastructure deployment (private Cloud and on-premise), tool administration (SSO, Jenkins, SonarQube, nginx, apacheDS).</li>
+            <li>Development of CI/CD pipelines with Jenkins and Gitlab-CI.</li>
+            <li>Lead developer on specific tools in PHP (Laravel framework).</li>
+          </ul>
+          <div class="mt-3 flex flex-wrap gap-1.5">
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Gitlab-CI</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Jenkins</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Docker</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Kubernetes</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Terraform</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Ansible</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">PHP / Laravel</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Openstack</span>
+          </div>
+        </div>
+
+        <!-- Orange Expert -->
+        <div class="border-t border-gray-100 pt-6">
+          <div class="flex items-start justify-between gap-2 flex-wrap">
+            <div>
+              <h3 class="text-base font-bold text-gray-800">Orange</h3>
+              <p class="text-sm font-medium text-blue-600">App, System & Storage Expert</p>
+            </div>
+            <span class="text-xs text-gray-400 font-mono whitespace-nowrap mt-1">2014 – 2019</span>
+          </div>
+          <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1 mt-2">
+            <li>System administration, deployment automation and administration of shared storage infrastructure.</li>
+            <li>Network administration (Load Balancers, Application Delivery Controllers).</li>
+          </ul>
+          <div class="mt-3 flex flex-wrap gap-1.5">
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Netapp</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Isilon</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Linux / Redhat</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">VMware</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">F5</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Ansible</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-0.5 rounded font-mono">Openstack</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="bg-gray-50 border-t border-gray-100 px-10 py-4 text-center text-xs text-gray-400">
+      Florian CARTRON — <a href="mailto:florian.cartron@gmail.com" class="hover:text-blue-500 transition">florian.cartron@gmail.com</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
