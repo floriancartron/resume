@@ -88,6 +88,8 @@ I worked with many customers on SRE missions, migration projects to Google Cloud
 - Full refactoring of the existing Terraform codebase and introduction of best practices.
 - Leveraged Atlantis to automate and streamline Terraform apply workflows via pull requests.
 
+**Stack:** Google Cloud, Terraform, ArgoCD, Victoria Metrics, Victoria Logs, Tempo
+
 ---
 
 #### Nutravalia — Cloud Consultant *(Zenika, November 2024 – January 2025)*
@@ -96,6 +98,8 @@ I worked with many customers on SRE missions, migration projects to Google Cloud
 - Support and acculturation of teams: training sessions (Google Cloud, Terraform, Docker).
 - Automation of the release and deployment process: CloudBuild, Semantic Release, Renovate.
 - Infrastructure code, deployment and migration.
+
+**Stack:** Google Cloud, Terraform
 
 ---
 
@@ -106,6 +110,8 @@ Migration from Ionos to Google Cloud of a social network application:
 - Design of the target architecture, moving from an "all-in-one" installation on one server (apps and database) to a distributed and scalable architecture (managed SQL database, Redis, instance autoscaling, load balancing...).
 - Support and acculturation of teams.
 - Infrastructure code, deployment (Terraform) and migration.
+
+**Stack:** Google Cloud, Terraform
 
 ---
 
