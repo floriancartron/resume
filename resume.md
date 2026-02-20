@@ -63,7 +63,7 @@ Ensuring reliability of the infrastructure and CI/CD pipelines (GitHub Actions).
 
 - In charge of migrating legacy workloads hosted on VMs to Google Cloud and Kubernetes.
 
-**Stack:** Google Cloud, Google Kubernetes Engine, GitHub Actions, ArgoCD, Crossplane, OpenTelemetry
+**Stack:** Google Cloud, Google Kubernetes Engine, GitHub Actions, ArgoCD, Crossplane, OpenTelemetry, Terraform, Terragrunt
 
 ---
 
