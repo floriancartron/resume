@@ -63,7 +63,7 @@ Ensuring reliability of the infrastructure and CI/CD pipelines (GitHub Actions).
 
 - Migrating legacy VM workloads to GKE.
 
-**Stack:** Google Cloud, Google Kubernetes Engine, GitHub Actions, ArgoCD, Crossplane, OpenTelemetry, Terraform, Terragrunt, Cloudflare
+**Stack:** Google Cloud, Google Kubernetes Engine, GitHub Actions, ArgoCD, Crossplane, OpenTelemetry, Terraform, Terragrunt, Cloudflare, Kyverno
 
 ---
 
