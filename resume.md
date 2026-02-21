@@ -72,7 +72,7 @@ Ensuring reliability of the infrastructure and CI/CD pipelines (GitHub Actions).
 
 SRE missions, migration projects to Google Cloud, FinOps topics, pre-sales, and target architecture design. Trainer for Kubernetes and Google Cloud topics; author and maintainer of Kubernetes training materials.
 
-**Stack:** Google Cloud, Kubernetes, Terraform, ArgoCD, Atlantis, OpenTelemetry, Victoria Metrics, Victoria Logs, Python, Go
+**Stack:** Google Cloud, Kubernetes, Terraform, Terragrunt, ArgoCD, Atlantis, OpenTelemetry, Victoria Metrics, Victoria Logs, Python, Go
 
 **Selected missions:**
 
