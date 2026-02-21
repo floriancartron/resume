@@ -43,10 +43,10 @@ Ensuring reliability of the infrastructure and CI/CD pipelines (GitHub Actions).
 
 **Kubernetes platform & GitOps:**
 
-- Designed and led the transition from Terraform-based application deployment to a streamlined GitOps solution with ArgoCD (ApplicationSets and App of Apps patterns), with the goal of easing deployment of existing and new projects through platform engineering.
-- Enforced best practices for image builds (12-factor app) to enable a promotion pattern for applications across environments.
-- Implemented Crossplane to provision Google Cloud resources (service accounts, Workload Identity configuration, etc.) directly from Helm charts provided to teams, removing the need to maintain Terraform configuration for these objects.
-- Deployed Renovate in self-hosted mode to enable frequent, small dependency updates; promoted this best practice within the infra team through a dedicated ritual and a promotion pipeline for infrastructure components, then extended it to dev teams for their application dependencies.
+- Led the migration to GitOps with ArgoCD (ApplicationSets, App of Apps) to streamline deployment of existing and new projects.
+- Enforced 12-factor build practices to enable environment promotion across clusters.
+- Implemented Crossplane to provision GCP resources (service accounts, Workload Identity, etc.) directly from Helm charts, removing standalone Terraform config for these objects.
+- Deployed self-hosted Renovate for frequent dependency updates; extended the practice from the infra team to dev teams.
 
 **Observability:**
 
@@ -61,7 +61,7 @@ Ensuring reliability of the infrastructure and CI/CD pipelines (GitHub Actions).
 
 **Migration:**
 
-- In charge of migrating legacy workloads hosted on VMs to Google Cloud and Kubernetes.
+- Migrating legacy VM workloads to GKE.
 
 **Stack:** Google Cloud, Google Kubernetes Engine, GitHub Actions, ArgoCD, Crossplane, OpenTelemetry, Terraform, Terragrunt
 
@@ -70,56 +70,36 @@ Ensuring reliability of the infrastructure and CI/CD pipelines (GitHub Actions).
 ### Zenika — Cloud & DevOps Consultant / Trainer
 *October 2023 – August 2025*
 
-I worked with many customers on SRE missions, migration projects to Google Cloud, and FinOps topics. I was also involved in pre-sales activities, particularly for migration topics and the design of target architectures. In addition, I was a trainer for Kubernetes and Google Cloud topics, and I also authored, updated and maintained the Kubernetes training materials.
+SRE missions, migration projects to Google Cloud, FinOps topics, pre-sales, and target architecture design. Trainer for Kubernetes and Google Cloud topics; author and maintainer of Kubernetes training materials.
 
----
+**Stack:** Google Cloud, Kubernetes, Terraform, ArgoCD, Atlantis, OpenTelemetry, Victoria Metrics, Victoria Logs, Python, Go
+
+**Selected missions:**
 
 #### Koralplay — DevOps Consultant *(Zenika, June 2025 – August 2025)*
 
-**Centralized observability platform for 10 Kubernetes clusters:**
-
-- Design of the network architecture (including Private Service Connect for ingestion endpoints to handle overlapping IP address plans across clusters) and infrastructure code to deploy a centralized monitoring platform across 10 Kubernetes clusters.
-- Full implementation of the observability stack via ArgoCD: Victoria Metrics, Victoria Logs, Tempo, OpenTelemetry Collector (with tail sampling for traces), Fluentd, Node Exporter, Grafana, Alertmanager.
-- Team training on the chosen stack.
-- Auto-instrumentation for Java applications via OpenTelemetry.
-
-**Terraform codebase refactoring:**
-
-- Full refactoring of the existing Terraform codebase and introduction of best practices.
-- Leveraged Atlantis to automate and streamline Terraform apply workflows via pull requests.
-
-**Stack:** Google Cloud, Terraform, ArgoCD, Victoria Metrics, Victoria Logs, Tempo
+- Designed the network architecture (incl. Private Service Connect for overlapping IP plans) and deployed a centralized observability platform across 10 Kubernetes clusters.
+- Full stack via ArgoCD: Victoria Metrics, Victoria Logs, Tempo, OpenTelemetry Collector (tail sampling), Fluentd, Grafana, Alertmanager. Auto-instrumentation for Java via OpenTelemetry.
+- Refactored the Terraform codebase and introduced Atlantis for PR automation.
 
 ---
 
 #### Nutravalia — Cloud Consultant *(Zenika, November 2024 – January 2025)*
 
-- Design of the target architecture: workload migration to Cloud Run (via containerization), performance optimization with Cloud SQL and Redis (shared cache), FinOps.
-- Support and acculturation of teams: training sessions (Google Cloud, Terraform, Docker).
-- Automation of the release and deployment process: CloudBuild, Semantic Release, Renovate.
-- Infrastructure code, deployment and migration.
-
-**Stack:** Google Cloud, Terraform
+- Target architecture: migration to Cloud Run, performance optimization (Cloud SQL, Redis), FinOps, team training.
+- Infrastructure code, deployment, migration and automated release pipeline (CloudBuild, Semantic Release, Renovate).
 
 ---
 
 #### Miasin — Cloud Consultant *(Zenika, October 2024 – December 2024)*
 
-Migration from Ionos to Google Cloud of a social network application:
-
-- Design of the target architecture, moving from an "all-in-one" installation on one server (apps and database) to a distributed and scalable architecture (managed SQL database, Redis, instance autoscaling, load balancing...).
-- Support and acculturation of teams.
-- Infrastructure code, deployment (Terraform) and migration.
-
-**Stack:** Google Cloud, Terraform
+- Migration from Ionos to GCP: architecture design (managed SQL, Redis, autoscaling, load balancing), infrastructure code and migration.
 
 ---
 
 #### AODocs — Site Reliability Engineer *(Zenika, October 2023 – September 2024)*
 
-I worked within the SRE team in a rich environment, based almost entirely on Google Cloud services. I participated in the migration of the infrastructure with Atlantis (Terraform Pull Request Automation) to optimize costs and performance. I brought my CI/CD expertise on CloudBuild, then designed a new CD solution with CloudDeploy. I automated tasks with Cloud Functions (Python, Go) for integrations like Slack and Jira. I also managed the creation and configuration of landing zones in self-service mode for developers, all automated with Terraform (GCP Projects, GitHub Repositories), and worked on a cloud-agnostic platform design and implementation (Kubernetes based).
-
-**Stack:** Google Cloud (CloudBuild, CloudDeploy, CloudRun, GKE...), Terraform, Atlantis, Python, Go, GitHub, Kubernetes
+- Terraform infrastructure migration (Atlantis for PR automation), CI/CD (CloudBuild, CloudDeploy), Cloud Functions (Python, Go) for Slack/Jira automation, developer landing zones with Terraform, cloud-agnostic Kubernetes platform design.
 
 ---
 
@@ -150,7 +130,7 @@ Contributor within an Agile Release Train for mass-market services, in the syste
 
 - Definition of the technical architecture of the DevOps tooling base, deployment of the infrastructure on private Cloud and on premise, administration of tools (SSO with the internal solution, Jenkins, SonarQube, nginx, apacheDS).
 - Development of CI/CD pipelines with Jenkins and Gitlab-CI.
-- Lead developer on specific tools in PHP (Laravel framework).
+- Lead developer on internal tools in PHP (Laravel framework).
 
 **Stack:** Gitlab-CI, Jenkins, Docker, Kubernetes, Terraform, Ansible, PHP (Laravel), SonarQube, apacheDS, nginx, Openstack
 
