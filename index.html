@@ -74,6 +74,20 @@
         break-inside: avoid;
         page-break-inside: avoid;
       }
+
+      /* Tighten spacing for print */
+      .px-10 { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
+      .py-8 { padding-top: 0.75rem !important; padding-bottom: 0.75rem !important; }
+      .py-3 { padding-top: 0.25rem !important; padding-bottom: 0.25rem !important; }
+      .gap-8 { gap: 1rem !important; }
+      .gap-4 { gap: 0.5rem !important; }
+      .mt-3 { margin-top: 0.4rem !important; }
+      .mt-2 { margin-top: 0.25rem !important; }
+      .space-y-1 > * + * { margin-top: 0.1rem !important; }
+      .pt-6 { padding-top: 0.75rem !important; }
+      .text-4xl { font-size: 1.6rem !important; }
+      .w-24 { width: 4rem !important; height: 4rem !important; }
+      .h-24 { width: 4rem !important; height: 4rem !important; }
     }
   </style>
 </head>
@@ -90,7 +104,8 @@
             <h1 class="text-4xl font-extrabold tracking-tight">
               Florian <span class="text-blue-200">CARTRON</span>
             </h1>
-            <p class="text-blue-100 text-lg font-medium mt-1">DevOps / Platform Engineer</p>
+            <p class="text-blue-100 text-lg font-medium mt-1">Senior DevOps / Platform Engineer</p>
+            <p class="text-blue-100 text-sm mt-2 max-w-lg">10+ years of experience · Hands-on builder of scalable, GitOps-driven platforms — focused on developer experience, infrastructure automation and operational excellence.</p>
           </div>
         </div>
         <div class="flex flex-col gap-1 text-sm text-blue-100">
@@ -118,7 +133,7 @@
         <!-- EXPERTISES -->
         <section>
           <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-3 border-b border-blue-100 pb-1">Expertises</h2>
-          <div class="flex flex-col gap-2">
+          <div class="flex flex-col gap-1">
 
             <!-- Helper: level bar -->
             <!-- Expert = 5/5, Advanced = 4/5, Intermediate = 3/5 -->
@@ -154,6 +169,16 @@
               </div>
             </div>
             <div class="flex items-center justify-between">
+              <span class="text-sm font-medium w-32">ArgoCD</span>
+              <div class="flex gap-1">
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="w-3 h-3 rounded-full bg-gray-200"></span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between">
               <span class="text-sm font-medium w-32">Docker</span>
               <div class="flex gap-1">
                 <span class="w-3 h-3 rounded-full bg-blue-600"></span>
@@ -164,7 +189,7 @@
               </div>
             </div>
             <div class="flex items-center justify-between">
-              <span class="text-sm font-medium w-32">Ansible</span>
+              <span class="text-sm font-medium w-32">GitHub</span>
               <div class="flex gap-1">
                 <span class="w-3 h-3 rounded-full bg-blue-600"></span>
                 <span class="w-3 h-3 rounded-full bg-blue-600"></span>
@@ -195,16 +220,6 @@
             </div>
             <div class="flex items-center justify-between">
               <span class="text-sm font-medium w-32">Gitlab</span>
-              <div class="flex gap-1">
-                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
-                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
-                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
-                <span class="w-3 h-3 rounded-full bg-gray-200"></span>
-                <span class="w-3 h-3 rounded-full bg-gray-200"></span>
-              </div>
-            </div>
-            <div class="flex items-center justify-between">
-              <span class="text-sm font-medium w-32">GitHub</span>
               <div class="flex gap-1">
                 <span class="w-3 h-3 rounded-full bg-blue-600"></span>
                 <span class="w-3 h-3 rounded-full bg-blue-600"></span>
@@ -277,36 +292,28 @@
           <div class="flex items-start justify-between gap-2 flex-wrap">
             <div>
               <h3 class="text-base font-bold text-gray-800">Prestashop</h3>
-              <p class="text-sm font-medium text-blue-600">DevOps / Platform Engineer</p>
+              <p class="text-sm font-medium text-blue-600">Senior DevOps / Platform Engineer</p>
             </div>
             <span class="text-xs text-gray-400 font-mono whitespace-nowrap mt-1">Sep 2025 – Present</span>
           </div>
-          <p class="text-sm text-gray-600 mt-2">Ensuring reliability of the infrastructure and CI/CD pipelines (GitHub Actions).</p>
+          <p class="text-sm text-gray-600 mt-2">Leading platform reliability and developer experience across a 50+ engineer engineering organization on GKE.</p>
 
           <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-3 mb-1">Kubernetes Platform & GitOps</p>
           <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1">
-            <li>Led the migration to GitOps with ArgoCD (ApplicationSets, App of Apps) to streamline deployment of existing and new projects.</li>
-            <li>Enforced 12-factor build practices to enable environment promotion across clusters.</li>
-            <li>Implemented Crossplane to provision GCP resources (service accounts, Workload Identity, etc.) directly from Helm charts, removing standalone Terraform config for these objects.</li>
-            <li>Deployed self-hosted Renovate for frequent dependency updates; extended the practice from the infra team to dev teams.</li>
+            <li>Led the company-wide GitOps adoption with ArgoCD (ApplicationSets, App of Apps) — onboarded 50+ engineers across multiple teams, standardizing deployments across clusters and environments and eliminating manual release processes.</li>
+            <li>Enforced 12-factor build practices to enable consistent environment promotion across clusters at scale.</li>
+            <li>Designed a Platform Engineering self-service layer with Crossplane: developers provision GCP resources (service accounts, Workload Identity, buckets) directly from their Helm charts — no infra tickets, no Terraform PRs, time-to-provision reduced from days to minutes.</li>
+            <li>Deployed self-hosted Renovate and led the cultural shift to automated dependency updates — coached dev teams through adoption across the entire organization.</li>
           </ul>
 
           <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-3 mb-1">Observability</p>
           <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1">
-            <li>Reworked Grafana dashboard deployment using ArgoCD, with templating and provisioning through ConfigMaps.</li>
+            <li>Built an OpenTelemetry-based platform (metrics, traces, APM) with ready-to-use dashboard and alerting templates — any team gets baseline observability out of the box, managed as code via ArgoCD.</li>
           </ul>
 
           <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-3 mb-1">FinOps</p>
           <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1">
-            <li>Implemented Custom Compute Classes to define Kubernetes node preferences and optimize compute costs.</li>
-            <li>Deployed Kube-Green to automatically stop non-critical workloads at night.</li>
-            <li>Rightsizing of Kubernetes workloads (requests/limits tuning).</li>
-            <li>Automated Cloud SQL instance shutdown during off-hours.</li>
-          </ul>
-
-          <p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-3 mb-1">Migration</p>
-          <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1">
-            <li>Migrating legacy VM workloads to GKE.</li>
+            <li>Achieved ~20% reduction in infrastructure costs (GKE + Cloud SQL): automated off-hours shutdown of non-prod environments (Kube-Green + Cloud SQL scheduling), Custom Compute Classes, and workload rightsizing.</li>
           </ul>
 
           <div class="mt-3 flex flex-wrap gap-1.5">
@@ -351,36 +358,25 @@
           <!-- Koralplay -->
           <div class="mt-4 pl-4 border-l-2 border-blue-200">
             <div class="flex items-start justify-between gap-2 flex-wrap">
-              <p class="text-sm font-semibold text-gray-700">Koralplay <span class="font-normal text-gray-500">— DevOps Consultant</span></p>
+              <p class="text-sm font-semibold text-gray-700">Koralplay <span class="font-normal text-gray-500">— Senior DevOps Consultant</span></p>
               <span class="text-xs text-gray-400 font-mono whitespace-nowrap">Jun 2025 – Aug 2025</span>
             </div>
             <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1 mt-1">
-              <li>Designed the network architecture (incl. Private Service Connect for overlapping IP plans) and deployed a centralized observability platform across 10 Kubernetes clusters.</li>
-              <li>Full stack via ArgoCD: Victoria Metrics, Victoria Logs, Tempo, OpenTelemetry Collector (tail sampling), Fluentd, Grafana, Alertmanager. Auto-instrumentation for Java via OpenTelemetry.</li>
-              <li>Refactored the Terraform codebase and introduced Atlantis for PR automation.</li>
+              <li>Sole consultant responsible for designing and delivering a centralized multi-cluster observability platform across 10 Kubernetes clusters, including a complex network architecture with Private Service Connect to handle overlapping IP plans.</li>
+              <li>Full GitOps observability stack via ArgoCD: Victoria Metrics, Victoria Logs, Tempo, OpenTelemetry Collector (tail sampling), Fluentd, Grafana, Alertmanager — Java auto-instrumentation via OpenTelemetry.</li>
+              <li>Led Terraform codebase refactoring and introduced Atlantis to enable GitOps-driven infra reviews for the team.</li>
             </ul>
           </div>
 
           <!-- Nutravalia -->
           <div class="mt-4 pl-4 border-l-2 border-blue-200">
             <div class="flex items-start justify-between gap-2 flex-wrap">
-              <p class="text-sm font-semibold text-gray-700">Nutravalia <span class="font-normal text-gray-500">— Cloud Consultant</span></p>
+              <p class="text-sm font-semibold text-gray-700">Nutravalia <span class="font-normal text-gray-500">— Senior Cloud Consultant</span></p>
               <span class="text-xs text-gray-400 font-mono whitespace-nowrap">Nov 2024 – Jan 2025</span>
             </div>
             <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1 mt-1">
-              <li>Target architecture: migration to Cloud Run, performance optimization (Cloud SQL, Redis), FinOps, team training.</li>
-              <li>Infrastructure code, deployment, migration and automated release pipeline (CloudBuild, Semantic Release, Renovate).</li>
-            </ul>
-          </div>
-
-          <!-- Miasin -->
-          <div class="mt-4 pl-4 border-l-2 border-blue-200">
-            <div class="flex items-start justify-between gap-2 flex-wrap">
-              <p class="text-sm font-semibold text-gray-700">Miasin <span class="font-normal text-gray-500">— Cloud Consultant</span></p>
-              <span class="text-xs text-gray-400 font-mono whitespace-nowrap">Oct 2024 – Dec 2024</span>
-            </div>
-            <ul class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1 mt-1">
-              <li>Migration from Ionos to GCP: architecture design (managed SQL, Redis, autoscaling, load balancing), infrastructure code and migration.</li>
+              <li>Led target architecture definition for migration to Cloud Run — covering performance optimization (Cloud SQL, Redis), FinOps, and full infrastructure delivery with automated release pipeline (CloudBuild, Semantic Release, Renovate).</li>
+              <li>Trained and upskilled the client's engineering team on GCP best practices and the new architecture.</li>
             </ul>
           </div>
 

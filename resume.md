@@ -1,5 +1,7 @@
 # Florian CARTRON
-**DevOps Engineer**
+**Senior DevOps / Platform Engineer**
+
+10+ years of experience · Hands-on builder of scalable, GitOps-driven platforms — focused on developer experience, infrastructure automation and operational excellence.
 
 📧 [florian.cartron@gmail.com](mailto:florian.cartron@gmail.com)
 🔗 [LinkedIn](https://www.linkedin.com/in/florian-cartron/)
@@ -13,14 +15,14 @@
 | Technology    | Level        |
 |---------------|--------------|
 | Google Cloud  | Expert       |
+| Kubernetes    | Expert       |
 | Terraform     | Expert       |
-| Ansible       | Advanced     |
-| Python        | Intermediate     |
-| Go            | Intermediate |
+| ArgoCD        | Advanced     |
 | Docker        | Advanced     |
-| Kubernetes    | Expert     |
+| GitHub        | Advanced     |
+| Python        | Intermediate |
+| Go            | Intermediate |
 | Gitlab        | Intermediate |
-| Github        | Intermediate |
 
 ---
 
@@ -36,32 +38,25 @@
 
 ## Work Experience
 
-### Prestashop — DevOps / Platform Engineer
+### Prestashop — Senior DevOps / Platform Engineer
 *September 2025 – Present*
 
-Ensuring reliability of the infrastructure and CI/CD pipelines (GitHub Actions).
+Leading platform reliability and developer experience across a 50+ engineer engineering organization on GKE.
 
 **Kubernetes platform & GitOps:**
 
-- Led the migration to GitOps with ArgoCD (ApplicationSets, App of Apps) to streamline deployment of existing and new projects.
-- Enforced 12-factor build practices to enable environment promotion across clusters.
-- Implemented Crossplane to provision GCP resources (service accounts, Workload Identity, etc.) directly from Helm charts, removing standalone Terraform config for these objects.
-- Deployed self-hosted Renovate for frequent dependency updates; extended the practice from the infra team to dev teams.
+- Led the company-wide GitOps adoption with ArgoCD (ApplicationSets, App of Apps) — onboarded 50+ engineers across multiple teams, standardizing deployments across clusters and environments and eliminating manual release processes.
+- Enforced 12-factor build practices to enable consistent environment promotion across clusters at scale.
+- Designed a Platform Engineering self-service layer with Crossplane: developers provision GCP resources (service accounts, Workload Identity, buckets) directly from their Helm charts — no infra tickets, no Terraform PRs, time-to-provision reduced from days to minutes.
+- Deployed self-hosted Renovate and led the cultural shift to automated dependency updates — coached dev teams through adoption across the entire organization.
 
 **Observability:**
 
-- Reworked Grafana dashboard deployment using ArgoCD, with templating and provisioning through ConfigMaps.
+- Built an OpenTelemetry-based platform (metrics, traces, APM) with ready-to-use dashboard and alerting templates — any team gets baseline observability out of the box, managed as code via ArgoCD.
 
 **FinOps:**
 
-- Implemented Custom Compute Classes to define Kubernetes node preferences and optimize compute costs.
-- Deployed Kube-Green to automatically stop non-critical workloads at night.
-- Rightsizing of Kubernetes workloads (requests/limits tuning).
-- Automated Cloud SQL instance shutdown during off-hours.
-
-**Migration:**
-
-- Migrating legacy VM workloads to GKE.
+- Achieved ~20% reduction in infrastructure costs (GKE + Cloud SQL): automated off-hours shutdown of non-prod environments (Kube-Green + Cloud SQL scheduling), Custom Compute Classes, and workload rightsizing.
 
 **Stack:** Google Cloud, Google Kubernetes Engine, GitHub Actions, ArgoCD, Crossplane, OpenTelemetry, Terraform, Terragrunt, Cloudflare, Kyverno
 
@@ -76,24 +71,18 @@ SRE missions, migration projects to Google Cloud, FinOps topics, pre-sales, and 
 
 **Selected missions:**
 
-#### Koralplay — DevOps Consultant *(Zenika, June 2025 – August 2025)*
+#### Koralplay — Senior DevOps Consultant *(Zenika, June 2025 – August 2025)*
 
-- Designed the network architecture (incl. Private Service Connect for overlapping IP plans) and deployed a centralized observability platform across 10 Kubernetes clusters.
-- Full stack via ArgoCD: Victoria Metrics, Victoria Logs, Tempo, OpenTelemetry Collector (tail sampling), Fluentd, Grafana, Alertmanager. Auto-instrumentation for Java via OpenTelemetry.
-- Refactored the Terraform codebase and introduced Atlantis for PR automation.
-
----
-
-#### Nutravalia — Cloud Consultant *(Zenika, November 2024 – January 2025)*
-
-- Target architecture: migration to Cloud Run, performance optimization (Cloud SQL, Redis), FinOps, team training.
-- Infrastructure code, deployment, migration and automated release pipeline (CloudBuild, Semantic Release, Renovate).
+- Sole consultant responsible for designing and delivering a centralized multi-cluster observability platform across 10 Kubernetes clusters, including a complex network architecture with Private Service Connect to handle overlapping IP plans.
+- Full GitOps observability stack via ArgoCD: Victoria Metrics, Victoria Logs, Tempo, OpenTelemetry Collector (tail sampling), Fluentd, Grafana, Alertmanager — Java auto-instrumentation via OpenTelemetry.
+- Led Terraform codebase refactoring and introduced Atlantis to enable GitOps-driven infra reviews for the team.
 
 ---
 
-#### Miasin — Cloud Consultant *(Zenika, October 2024 – December 2024)*
+#### Nutravalia — Senior Cloud Consultant *(Zenika, November 2024 – January 2025)*
 
-- Migration from Ionos to GCP: architecture design (managed SQL, Redis, autoscaling, load balancing), infrastructure code and migration.
+- Led target architecture definition for migration to Cloud Run — covering performance optimization (Cloud SQL, Redis), FinOps, and full infrastructure delivery with automated release pipeline (CloudBuild, Semantic Release, Renovate).
+- Trained and upskilled the client's engineering team on GCP best practices and the new architecture.
 
 ---
 
