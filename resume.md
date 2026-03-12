@@ -47,6 +47,7 @@ Leading platform reliability and developer experience across a 50+ engineer engi
 
 - Led the company-wide GitOps adoption with ArgoCD (ApplicationSets, App of Apps) — onboarded 50+ engineers across multiple teams, standardizing deployments across clusters and environments and eliminating manual release processes.
 - Enforced 12-factor build practices to enable consistent environment promotion across clusters at scale.
+- Championed Kyverno adoption for policy enforcement combined with Policy Reporter to generate KPIs on deployment standardization — providing measurable visibility into best practices adoption across all engineering teams.
 - Designed a Platform Engineering self-service layer with Crossplane: developers provision GCP resources (service accounts, Workload Identity, buckets) directly from their Helm charts — no infra tickets, no Terraform PRs, time-to-provision reduced from days to minutes.
 - Deployed self-hosted Renovate and led the cultural shift to automated dependency updates — coached dev teams through adoption across the entire organization.
 
